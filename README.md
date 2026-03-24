@@ -1,6 +1,6 @@
 # WiFi Quality Tester
 
-A terminal utility to **measure and compare WiFi connection quality** from different spots — covering signal strength, speed, ping, jitter, and packet loss.
+A terminal utility to **find the best spot in your home for WiFi calls** — test from different rooms while the router stays put, and compare signal strength, speed, ping, jitter, and packet loss side-by-side.
 
 ---
 
@@ -40,11 +40,14 @@ Interactive menu launches automatically.
 
 ## Workflow — finding the best spot
 
-1. Place your router in **Position A** (e.g. Living Room)
+Router stays in its fixed position. You walk to each room with your laptop/device and run a test.
+
+1. Go to **Room A** (e.g. Living Room) with your device
 2. Run **Option 1** (Full Test) → name it `Living Room`
-3. Move router to **Position B** (e.g. Bedroom)
+3. Move to **Room B** (e.g. Bedroom) — router doesn't move
 4. Run **Option 1** again → name it `Bedroom`
-5. Run **Option 4** (Compare) → side-by-side table with ⭐ best values highlighted
+5. Repeat for as many rooms as you want
+6. Run **Option 4** (Compare) → side-by-side table with ⭐ best values highlighted
 
 ---
 
@@ -80,7 +83,7 @@ Each test is scored **0–100** from a weighted combination of metrics:
 
 ## My Results
 
-Tested 4 spots at home — router is located in/near the **Kitchen/Living Room** area.
+Router is fixed in one spot. Tested from 4 different rooms to find which position in the home gets the best WiFi for calls.
 
 | Metric | Requirement | Office | Living Room | Kitchen | Balcony |
 |--------|-------------|--------|-------------|---------|---------|
@@ -96,12 +99,12 @@ Tested 4 spots at home — router is located in/near the **Kitchen/Living Room**
 
 ### Key takeaways
 
-- **Kitchen & Living Room are the best spots** — both closest to the router, scoring 99.8/100 with Excellent signal, 0.4 ms jitter, and zero packet loss.
+- **Kitchen & Living Room are the best spots to sit** — both closest to the router, scoring 99.8/100 with Excellent signal, 0.4 ms jitter, and zero packet loss.
 - **Kitchen has the strongest raw signal** (−38 dBm, SNR 53 dB) and highest link speed (585 Mbps), making it the top pick if you need maximum headroom.
-- **Office is solid** (97.3/A) but the weakest signal (−69 dBm, Fair) — only 1 dBm away from the "Fair" threshold, so it's more vulnerable during congestion or interference.
+- **Office is solid** (97.3/A) but it's the furthest room from the router — weakest signal (−69 dBm, Fair), only 1 dBm from the threshold, so it's more vulnerable during congestion or interference.
 - **Balcony should be avoided for calls** — jitter spiked to 63 ms (2× over the 30 ms limit) with pings ranging 9–210 ms, likely due to walls/distance causing intermittent signal drops. Speed was fine but the instability would cause choppy audio.
 
-> **Verdict:** Use **Kitchen** or **Living Room** for meetings. Avoid the Balcony for anything real-time.
+> **Verdict:** Sit in the **Kitchen** or **Living Room** for meetings — closest to the router. Avoid the Balcony for anything real-time.
 
 ---
 
